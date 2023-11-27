@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>candy shop</title>
+    <style>
+        /* Estilo para ocultar o botão */
+        .oculto {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>candy shop</h1>
+        <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\shop_83903 (cópia 1).png" width="50px" alt="container">
+    </header>
+            <nav>
+                        <ul>
+                            <li><a href="#barras">barras de chocolate</a></li>
+                            <li><a href="#caixas">caixas de chocolate</a></li>
+                            <li><a href="#importados">chocolates importados</a></li>
+                            <li><a href="#limitadas">edições limitadas</a></li>
+                            <li><a href="#natal">doces de natal</a></li>
+                        </ul>
+            </nav>
+  <a id="link" href="#">&#9650;</a>
+    <div class="container">
+        <body>
+            <div class="menu">
+                <button id="toggleButton">
+                    <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\pete-pedro-styling-aid-charts-842796-removebg-preview.png"width="50px" alt="Ícone do Menu">
+                </button>
+                <ul id="menuList">
+                    <li><a href="https://www.facebook.com/felipe.sowa">fecebook</a></li>
+                    <li><a href="https://www.instagram.com/wellysonfel/">instagram</a></li>
+                    <li><a href="créditos.html">créditos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <script src="menu.js"></script>
+        </body>
+        <!-----barras de chocolate------------->
+        <section class="baras de chocolates" id="barras"></section>
+        <div id="resultadoTotal" class="resultado-total">Total: R$ <span id="precoTotal">0.00</span></div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\5526911001_1GG.webp" width="150px" alt="container">        
+            <h2>Barra de Chocolate Cores Ao Leite Garoto 80g</h2>
+            <p>A Barra de Chocolate Cores Ao Leite Garoto é a deliciosa combinação de chocolate ao leite com confeitos coloridos de chocolate. Produzido com toda qualidade e sabor inconfundível, cada pedacinho é a opção perfeita para um lanchinho na hora que a fome bate ou até mesmo como aquela sobremesa após as refeições.</p>
+            <p>Preço: R$ 5,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="5" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-5" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\0bcffb395bfd4b3d6967ecbcfc2ae63bb272f1b9.webp" width="150px" alt="container">        
+            <h2>Barra de Chocolate Nestlé Classic duo cookie, 1 unidade com 150g</h2>
+            <p>Se você gosta daquela versão mais cremosa, que derrete na boca, vai adorar a receita exclusiva do Chocolate Nestlé Classic ao Leite.</p>
+            <p>Preço: R$ 10,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="10" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-10" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\5309130-800-auto - Copia.webp" width="150px" alt="container">        
+            <h2>Barra de Chocolate ao Leite 1kg - Garoto</h2>
+            <p>Chocolate ao Leite, em barra, indicado no preparo de bombons, ovos de Páscoa, trufas, bolos e sobremesas diversas. Embalagem de 1kg.</p>
+            <p>Preço: R$ 53,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="53" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-53" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\chocolate-barra-hersheys-tab-87g-ao-leit1-3628db9f27e63be46815944038711957-1024-1024 (1).jpg" width="150px" alt="container">        
+            <h2>CHOCOLATE BARRA HERSHEYS TAB 87G AO LEITE</h2>
+            <p>Com uma textura suave e macia que derrete facilmente na boca, foi feito especialmente para você curtir os deliciosos momentos da vida.</p>
+            <p>Preço: R$ 5,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="5" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-5" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\227951-800-auto.webp" width="150px" alt="container">        
+            <h2>BARRA LACTA CHOCOLATE AO LEITE OREO 90G</h2>
+            <p>A perfeita combinação de cacau e leite traz o sabor único para a barra Lacta</p>
+            <p>Preço: R$ 7,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="7" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-7" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\barra-de-chocolate-meio-amargo-40-neugebauer-90g.png" width="150px" alt="container">        
+            <h2>Barra de Chocolate Meio Amargo 40% Neugebauer - 90g</h2>
+            <p>Tablete Neugebauer Meio Amargo: cremoso, macio, derrete na boca e tem um gostinho inconfundível. Um autêntico sabor para quem entende e aprecia o verdadeiro chocolate.</p>
+            <p>Preço: R$ 5,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="5" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-5" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\download (10).jpg" width="150px" alt="container">        
+            <h2>Barra de Chocolate Nestlé Alpino 90g</h2>
+            <p>A barra de chocolate Nestlé Alpino é uma delícia brasileira clássica que é uma misturad nistura de deliciosas camadas de chocolate ao leite e wafer crocante. Com uma textura suave e cremosa, esta barra de chocolate é perfeita para satisfazer os seus deseļos doces. Cada barra pesa 90g, tornando-a ideal para compartilhar ou desfrutar de um momento de pura felicidade com chocolate</p>
+            <p>Preço: R$ 7,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="7" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-7" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\819824---Barra-de-Chocolate-Lacta-Recheados-Branco-Recheio-Ouro-Branco-98g-1.webp" width="150px" alt="container">        
+            <h2>Barra de Chocolate Lacta Recheados Branco Recheio Ouro Branco 98g</h2>
+            <p>O delicioso e amado sabor de Ouro Branco, agora em formato de tablete, com muito recheio e cremosidade.</p>
+            <p>Preço: R$ 8,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="8" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-8" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\3279945326_1.webp" width="150px" alt="container">        
+            <h2>Lacta 90G laka</h2>
+            <p>Acrescente um toque de sabor todo especial ao seu dia a dia com a saborosíssima Barra de Chocolate Branco Laka Lacta 90g. Elaborada com ingredientes selecionados é extremamente saborosos. é a escolha perfeita para alegrar o seu dia.</p>
+            <p>Preço: R$ 9,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="9" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-9" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\download.jpeg" width="150px" alt="container">        
+            <h2>Barra de Chocolate Talento castanha-do-Pará, 1 unidade com 25g</h2>
+            <p>A Barra de Chocolate Talento foi criada para agradar a todos os gostos!</p>
+            <p>Preço: R$ 3,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="3" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-3" onclick="removerItem(this)">Remover</button>
+        </div>
+        <!-------------caixa de chocolate------------->
+        <section class="caixas de chocolates" id="caixas"></section>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\1355315883df7080b1c.webp" width="150px" alt="container">        
+            <h2>Caixa de Bombom Chocolate 250G - Garoto</h2>
+            <p>Para qualquer momento e qualquer lugar, possui uma diversidade de sabores que agradam a todos os gostos.</p>
+            <p>Preço: R$ 13,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="13" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-13" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\produto-caixa-acor.jpg" width="150px" alt="container">        
+            <h2>Caixa de Chocolates Sortidos Arcor 146g</h2>
+            <p>CAIXA DE BOMBONS SORTIDOS ARCOR</p>
+            <p>Preço: R$ 8,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="8" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-8" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\615hetYY2UL._AC_UF1000,1000_QL80_.jpg" width="150px" alt="container">        
+            <h2>Caixa de Bombons Sortidos Nestlé Especialidades 251g</h2>
+            <p>A Caixa Nestlé® Especialidades junta os maiores sucessos da Nestlé em um lugar só! São variedades de chocolates em menores porções que enchem os olho!</p>
+            <p>Preço: R$ 13,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="13" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-13" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\163582019974796f290.webp" width="150px" alt="container">        
+            <h2>CAIXA DE CHOCOLATES SORTIDOS MU-MU KIDS NEUGEBAUER COM 12 UNIDADES</h2>
+            <p>Um delicioso chocolate com recheio de morango, que vem em formatos super divertidos, para as crianças e também os adultos, né? Cada chocolate vem em um formato e vai virar uma super brincadeira adivinhar qual será a vaquinha divertida da vez.</p>
+            <p>Preço: R$ 12,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="12" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-12" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\caixa-de-chocolate-lugano-8-barras-sortidas-200g-ambientada.png" width="150px" alt="container">        
+            <h2>Caixa de Chocolate Lugano 8 Barras Sortidas 200g</h2>
+            <p>02 Barras de Chocolate ao Leite Lugano 25g
+                02 Barras de Chocolate ao Leite Lugano com Crocantes 25g</p>
+            <p>Preço: R$ 65,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="65" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-65" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\ferrero_t12-1024x1024.webp" width="150px" alt="container">        
+            <h2>CAIXA CHOCOLATE FERRERO ROCHER COM 12 BOMBONS</h2>
+            <p>encontre Bombons Ferrero Rocher 12 Unidades na Drogaria Araujo com ótimas ofertas! Irresistível comer apenas um. Uma avelã inteira, imersa em um delicado recheio cremoso.</p>
+            <p>Preço: R$ 45,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="45" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-45" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\156793-300-300.webp" width="150px" alt="container">        
+            <h2>CAIXA CHOCOLATE GATO 110G</h2>
+            <p>Caixa com 20 unidades de chocolate ao leite em formato de língua de gato.</p>
+            <p>Preço: R$ 45,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="45" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-45" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\1000690_1.png" width="150px" alt="container">        
+            <h2>Caixa presente lacreme 225g</h2>
+            <p>Um gosto inesperado: você fecha os olhos de tão bom. LaCreme é um chocolate que derrete na boca. Aqui, deliciosas trufas artesanais em uma linda embalagem para presentear com carinho quem se gosta.</p>
+            <p>Preço: R$ 60,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="60" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-60" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\BOBSORT180GMOD1A-600-x-436.jpg" width="150px" alt="container">        
+            <h2>Bel Chocolates lança caixas de bombons para novo filme do Bob Esponja</h2>
+            <p>A Bel Chocolates apresenta as novas embalagens cartonadas de 180 gramas dos bombons sortidos com imagens do filme “Bob Esponja: um herói fora d’água”</p>
+            <p>Preço: R$ 25,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="25" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-25" onclick="removerItem(this)">Remover</button>
+        </div>
+        <!------------chocolates importados----------->
+        <section class="chocolates importados" id="importados"></section>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\kpibhyb1azxfrfgs2xgxfrkcsai8gg7c71at_640x640+fill_ffffff.png" width="150px" alt="container">        
+            <h2>CHOCOLATES IMPORTADOS DA POLÔNIA - MILKA OREO 100GR</h2>
+            <p>A vaquinha roxa mais conhecida do mundo agora pode se fazer presente na sua casa e garantir muitas alegrias à toda família.</p>
+            <p>Preço: R$ 25,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="25" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-25" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\4191363c-300c-4ff7-9502-3d5d47d69391_3af0511e-d095-4f94-8ba5-c9928337808d_1200x1200.webp" width="150px" alt="container">        
+            <h2>CHOCOLATE AO LEITE LINDT BARRA</h2>
+            <p>
+                O Chocolate ao Leite Lindt Barra é uma indulgência irresistível para os amantes de chocolate. Combinando a rica tradição suíça de fabricação de chocolate com ingredientes de alta qualidade, esta barra oferece uma experiência sensorial única.</p>
+            <p>Preço: R$ 50,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="50" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-50" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\aea812a753.webp" width="150px" alt="container">        
+            <h2>
+                Barra Ferrero Rocher 90 gramas</h2>
+            <p>
+                Desfrute da indulgência suprema com a Barra Ferrero Rocher de 90g. Uma combinação irresistível de avelãs crocantes, envoltas em um delicioso creme de chocolate. Uma experiência gourmet em cada pedaço. Pureza em forma de chocolate.</p>
+            <p>Preço: R$ 40,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="40" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-40" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\chocolate_de_menta_hershey_s_85g_5333_1_fcd368cb9d72465159169b23cf5b38d7.webp" width="150px" alt="container">        
+            <h2>Chocolate Hersheys Special Dark Menta 85g - Embalagem C/ 12 Unidades</h2>
+            <p>Desfrute de um casamento perfeito entre o rico sabor do chocolate Hershey's Special Dark e a refrescância da menta com a embalagem contendo 12 unidades de 85g cada. Cada mordida é uma experiência única, combinando a intensidade do chocolate escuro com a suavidade e o frescor da menta.</p>
+            <p>Preço: R$ 45,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="45" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-45" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\chocolate-novi-noisette.webp" width="150px" alt="container">        
+            <h2>Chocolate Novi Noisette 100g - Importado da Itália</h2>
+            <p>Mergulhe em uma experiência de sabor inigualável com o chocolate Novi Noisette de 100g, diretamente importado da Itália. Este deleite irresistível é uma combinação perfeita de texturas e sabores, apresentando a suavidade do chocolate harmonizada com a riqueza das avelãs.</p>
+            <p>Preço: R$ 30,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="30" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-30" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\ixggwdykqbn5yuro59v9d8gedmdi756ytzgp_640x640+fill_ffffff.png" width="150px" alt="container">        
+            <h2>SCHOGETTEN - ALPINE MILK CHOCOLATE - IMPORTADO DA ALEMANHA - 100G</h2>
+            <p>Experimente a excelência do chocolate SCHOGETTEN Alpine Milk, uma deliciosa importação da Alemanha, disponível em uma embalagem de 100g. Este chocolate proporciona uma jornada sensorial única, combinando a suavidade do leite alpino com a riqueza inconfundível do chocolate de alta qualidade.</p>
+            <p>Preço: R$ 30,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="30" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-30" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\Feastables-Mr-Beast-Milk-Chocolate-Bar-1-24-oz-35g-1-Bar_278d75e5-6910-4fc6-8622-8e223c5242de.3837a43120c2dd9356842c1c49eef6ce.webp" width="150px" alt="container">        
+            <h2>Barra de chocolate ao leite Feastables Mr Beast, 35g (1,24 onças), 1 barra</h2>
+            <p>Desfrute de um momento delicioso com a barra de chocolate ao leite Feastables Mr Beast, uma experiência única em cada mordida. Com 35g (1,24 onças), esta barra única é perfeita para satisfazer seus desejos de chocolate.</p>
+            <p>Preço: R$ 25,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="25" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-25" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\Feastables-MrBeast-Milk-Chocolate-Crunch-Bar-2-1-oz-60g-1-Bar_6abd39d9-87ad-4099-b4a1-e43b7d9d0196.676cee3b59b06c82cf2afc8aaa8381fa.webp" width="150px" alt="container">        
+            <h2>Barra de chocolate Mr Beast da Feastables chocolate original</h2>
+            <p>Desfrute de uma experiência única de sabor com a Barra de Chocolate Original Mr Beast da Feastables. Com cada mordida, você será envolvido pela riqueza do chocolate de alta qualidade, criando um momento verdadeiramente indulgente.</p>
+            <p>Preço: R$ 30,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="30" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-30" onclick="removerItem(this)">Remover</button>
+        </div>
+        <!-------------ediçoes limitadas------------------>
+        <section class="edições limitadas" id="limitadas"></section>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\hersheys2.jpg" width="150px" alt="container">        
+            <h2>Hershey’s edição limitada sabor Merengue de Morango</h2>
+            <p>Saboreie a doçura única da Edição Limitada Hershey's sabor Merengue de Morango. Esta criação especial leva você a uma jornada de indulgência com a combinação irresistível do sabor clássico do morango e a leveza do merengue.</p>
+            <p>Preço: R$ 10,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="10" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-10" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\lacta-edicao-especil.webp" width="150px" alt="container">        
+            <h2>tablete Lacta ao leite</h2>
+            <p>Delicie-se com o prazer clássico do Tablete Lacta ao Leite. Cada quadrado é uma experiência de indulgência que captura a cremosidade característica do chocolate ao leite Lacta. Com ingredientes de alta qualidade e um sabor inconfundível, este tablete é a escolha perfeita para os amantes do chocolate.</p>
+            <p>Preço: R$ 15,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="15" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-15" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\686a18bcae6bca3d875536a7406ad435.webp" width="150px" alt="container">        
+            <h2>Chocolate Garoto Talento Recheado Creme de Avelã 90g Edição Limitada</h2>
+            <p>Desfrute de uma experiência de sabor exclusiva com o Chocolate Garoto Talento Recheado sabor Creme de Avelã, na edição limitada de 90g. Este deleite especial combina a textura crocante do chocolate Talento com um irresistível recheio cremoso de avelãs, criando uma experiência única que vai além das expectativas</p>
+            <p>Preço: R$ 5,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="5" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-5" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\KtKat-Gold.jpg" width="150px" alt="container">        
+            <h2>KitKat lança edição limitada Gold</h2>
+            <p>
+                Desfrute da sofisticação e do sabor luxuoso com a Edição Limitada KitKat Gold. Esta nova criação da KitKat leva a icônica barra de chocolate a um nível ainda mais elevado, apresentando uma cobertura irresistível de chocolate dourado.</p>
+            <p>Preço: R$ 13,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="13" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-13" onclick="removerItem(this)">Remover</button>
+        </div>
+        <!-------------doces de natal-------------------->
+        <section class="doces de natal" id="natal"></section>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\Caixa-com-16-Chocolates-Decorados-Natal-The-Bakers-2022.jpeg" width="150px" alt="container">        
+            <h2>Caixa com 16 Chocolates Decorados Natal The Bakers </h2>
+            <p>A Caixa com 16 Chocolates Decorados Natal The Bakers é uma opção encantadora e saborosa para celebrar a temporada festiva. Cada detalhe desta caixa foi cuidadosamente elaborado para proporcionar uma experiência visual e gustativa excepcional.</p>
+            <p>Preço: R$ 110,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="110" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-110" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\3956516a26701d16340aa8fb23aa20e0.jpg" width="150px" alt="container">        
+            <h2>bengalas de doces de natal</h2>
+            <p>As bengalas de doces de Natal são um símbolo clássico e delicioso da temporada festiva. Com suas cores vibrantes e sabor adocicado, esses bastões de açúcar adicionam um toque festivo a decorações, presentes e celebrações</p>
+            <p>Preço: R$ 6,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="6" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-6" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\MMs2.jpg" width="150px" alt="container">        
+            <h2>Chocolate De Natal M&m's Pacote 148g</h2>
+            <p>
+                O Chocolate de Natal M&M's Pacote 148g é uma opção deliciosa e festiva que combina o sabor clássico dos chocolates M&M's com uma temática natalina.</p>
+            <p>Preço: R$ 20,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="20" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-20" onclick="removerItem(this)">Remover</button>
+        </div>
+        <div class="product">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\shopping.webp" width="150px" alt="container">        
+            <h2>Lata Natalina Butter Cookies Merry Christmas World Vermelha 100g - Santa Edwiges</h2>
+            <p>A Lata Natalina Butter Cookies Merry Christmas World Vermelha 100g da Santa Edwiges é uma irresistível delícia natalina que combina o sabor rico e amanteigado dos cookies com uma embalagem festiva.</p>
+            <p>preço: R$ 18,00</p>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" class="quantidade" value="1" min="1">
+            <button class="adicionar-ao-total" data-preco="18" onclick="adicionarProduto(this)">Adicionar</button>
+            <button class="adicionar-ao-total oculto" data-preco="-18" onclick="removerItem(this)">Remover</button>
+        </div>
+        <a href="carinho.html" target="_self" class="botao-imagem">
+            <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\istockphoto-1206806317-612x612-removebg-preview.png" width="70px" alt="">
+        </a>
+        
+    <script src="calculadora.js"></script>
+    <script>
+        // Função para mostrar o botão de remover e ocultar o botão de adicionar
+        function mostrarRemover(botaoAdicionar) {
+            botaoAdicionar.classList.add('oculto');
+            var botaoRemover = botaoAdicionar.nextElementSibling;
+            botaoRemover.classList.remove('oculto');
+        }
+
+        // Função para remover o item e mostrar o botão de adicionar
+        function removerItem(botaoRemover) {
+            botaoRemover.classList.add('oculto');
+            var botaoAdicionar = botaoRemover.previousElementSibling;
+            botaoAdicionar.classList.remove('oculto');
+        }
+
+        // Função para adicionar produtos ao total
+        function adicionarProduto(botaoAdicionar) {
+            // Encontra o elemento pai mais próximo com a classe 'product'
+            var productDiv = botaoAdicionar.closest('.product');
+
+            // Encontra o elemento de input de quantidade dentro do elemento 'product'
+            var quantidadeInput = productDiv.querySelector('.quantidade');
+
+            // Obtém a quantidade do produto
+            var quantidade = parseInt(quantidadeInput.value);
+
+            // Obtém o preço unitário do produto do atributo data-preco
+            var precoUnitario = parseFloat(botaoAdicionar.getAttribute('data-preco'));
+
+            // Obtém o elemento de preço total
+            var precoTotalElement = document.getElementById('precoTotal');
+
+            // Calcula o novo preço total
+            var precoTotal = parseFloat(precoTotalElement.innerText);
+            var novoPrecoTotal = precoTotal + quantidade * precoUnitario;
+
+            // Atualiza o elemento de preço total
+            precoTotalElement.innerText = novoPrecoTotal.toFixed(2);
+
+            // Mostra o botão "Remover" e oculta o botão "Adicionar"
+            mostrarRemover(botaoAdicionar);
+        }
+    </script>
+</html>

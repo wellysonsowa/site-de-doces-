@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Informações Pessoais</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 contenteditable="true">Informações Pessoais</h1>
+        
+        <div id="dados-container">
+            <p><strong>Nome:</strong> <span id="nome" contenteditable="true" class="editable"></span></p>
+            <p><strong>Email:</strong> <span id="email" contenteditable="true" class="editable"></span></p>
+            <p><strong>Telefone:</strong> <span id="telefone" contenteditable="true" class="editable"></span></p>
+            <p><strong>Data de Nascimento:</strong> <span id="nascimento" contenteditable="true" class="editable"></span></p>
+            <p><strong>CPF:</strong> <span id="cpf" contenteditable="true" class="editable"></span></p>
+        </div>
+
+        <button onclick="salvarDados()">Salvar Dados</button>
+        <a href="pagamento.html"><button>Próxima Página</button></a>
+    </div>
+
+    <button onclick="voltarParaPrimeiraPagina()" class="voltar-btn">
+        <img src="c:\Users\welly\Pictures\becap. projeto mercado de doçes\mescado\imagens\1038212.png" height="30px">
+    </button>
+
+    <script src="script.js"></script>
+
+    <script>
+        function voltarParaPrimeiraPagina() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
